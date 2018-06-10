@@ -10,6 +10,7 @@ import { FilterPipe } from './filter.pipe';
 import {DataService} from './data.service';
 import { FirebaseComponent } from './firebase/firebase.component';
 import {FirebaseService} from './firebase.service';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {FirebaseService} from './firebase.service';
     HomeComponent,
     DirectoryComponent,
     FilterPipe,
-    FirebaseComponent
+    FirebaseComponent,
+    ContactusComponent
 
   ],
   imports: [
