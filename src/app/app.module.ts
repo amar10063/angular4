@@ -11,6 +11,8 @@ import {DataService} from './data.service';
 import { FirebaseComponent } from './firebase/firebase.component';
 import {FirebaseService} from './firebase.service';
 import { ContactusComponent } from './contactus/contactus.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { ContactusComponent } from './contactus/contactus.component';
     DirectoryComponent,
     FilterPipe,
     FirebaseComponent,
-    ContactusComponent
+    ContactusComponent,
+    LoginComponent,
+    DashboardComponent
 
   ],
   imports: [
@@ -39,6 +43,18 @@ import { ContactusComponent } from './contactus/contactus.component';
          {
             path: 'firebase',
             component: FirebaseComponent
+         },
+         {
+            path: 'contactus',
+            component: ContactusComponent
+         },
+         {
+            path: 'login',
+            component: LoginComponent
+         },
+         {
+            path: 'dashboard',
+            component: DashboardComponent 
          }
       ])
   ],

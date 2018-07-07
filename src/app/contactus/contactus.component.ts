@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from "../user";
 
 @Component({
   selector: 'app-contactus',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent implements OnInit {
+  userList : User[] = [];
+  addUser(form){
+    console.log(form.value);
+  }
 
   constructor() { }
 

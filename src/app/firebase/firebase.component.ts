@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FirebaseService} from '../firebase.service';
-declare var firebase : any ?
+declare var firebase : any 
 @Component({
   selector: 'app-firebase',
   templateUrl: './firebase.component.html',
