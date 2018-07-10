@@ -10,6 +10,7 @@ import { FilterPipe } from './filter.pipe';
 import {DataService} from './data.service';
 import { FirebaseComponent } from './firebase/firebase.component';
 import {FirebaseService} from './firebase.service';
+import { LoggingService} from './logging.service';
 import { ContactusComponent } from './contactus/contactus.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -54,11 +55,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
          },
          {
             path: 'dashboard',
-            component: DashboardComponent 
+            component: DashboardComponent
          }
       ])
   ],
-  providers: [DataService,FirebaseService],
+  providers: [DataService,FirebaseService,LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
